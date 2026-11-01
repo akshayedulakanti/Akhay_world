@@ -118,11 +118,7 @@ a {
         radial-gradient(circle at 90% 75%, #cce8ff, transparent 38%),
         #eaf6ff;
 }
-.hero-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+
 }
 
 .profile-photo {
