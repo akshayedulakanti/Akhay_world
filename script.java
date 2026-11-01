@@ -17,7 +17,39 @@ menuBtn.addEventListener("click", function () {
     );
 });
 
+<div class="hero-image">
+    <img src="images/akshay.png"
+         alt="Akshay Edulakanti"
+         class="profile-photo">
+</div><span class="learn-more">Explore skill →</span>.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
 
+.profile-photo {
+    width: 100%;
+    max-width: 420px;
+    height: 480px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 25px;
+    border: 2px solid rgba(255,255,255,0.15);
+    box-shadow: 0 15px 50px rgba(0,0,0,0.4);
+    transition: transform 0.4s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+    .profile-photo {
+        max-width: 300px;
+        height: 350px;
+    }
+        }
 // CLOSE MENU AFTER CLICKING A LINK
 
 const navLinks = document.querySelectorAll("#navMenu a");
