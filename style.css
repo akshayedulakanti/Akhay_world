@@ -568,6 +568,7 @@ footer p + p {
 
 
 /* REDUCED MOTION */
+<span class="learn-more">Explore skill →</span>
 
 @media (prefers-reduced-motion: reduce) {
     *,
