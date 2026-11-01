@@ -156,5 +156,6 @@ document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
         hideSkillModal();
     }
-});
+}); 
+<span class="learn-more">Explore skill →</span>
       modalDescription.textContentmodalTitle.textContentmodalUsage.textContentmodalExample.textContentdocument.body.style.overflowmodal.showhttps://fonts.googleapis.comnav.active
