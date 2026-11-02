@@ -260,8 +260,20 @@ header {
 }
 
 .skill-icon {
-    font-size: 52px;
+    .skill-icon {
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 18px;
+    font-size: 52px;
+}
+
+.skill-icon img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
 }
 
 .skill-card h3 {
