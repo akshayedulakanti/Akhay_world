@@ -1,0 +1,383 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f9ff;
+    color: #18324b;
+    line-height: 1.7;
+}
+
+.navbar {
+    min-height: 70px;
+    padding: 15px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    box-shadow: 0 3px 15px rgba(20, 60, 100, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    color: #183b61;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #2196d2;
+}
+
+.menu-btn, .nav-menu button {
+    border: none;
+    background: #e8f4ff;
+    color: #145b91;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.nav-menu {
+    display: none;
+    position: absolute;
+    right: 8%;
+    top: 65px;
+    min-width: 170px;
+    padding: 12px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.13);
+}
+
+.nav-menu.show {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.nav-menu a, .nav-menu button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    text-decoration: none;
+    color: #183b61;
+    background: transparent;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.nav-menu a:hover, .nav-menu button:hover {
+    background: #e8f4ff;
+}
+
+.settings-panel {
+    display: none;
+    position: absolute;
+    right: 8%;
+    top: 215px;
+    background: white;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.13);
+    min-width: 190px;
+}
+
+.settings-panel.show {
+    display: grid;
+    gap: 10px;
+}
+
+.settings-panel select {
+    padding: 10px;
+    border: 1px solid #b7d6ef;
+    border-radius: 7px;
+    background: white;
+}
+
+.hero {
+    min-height: 570px;
+    padding: 75px 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 45px;
+    background: linear-gradient(120deg, #eaf6ff, #f8fbff);
+}
+
+.small-heading {
+    color: #1684c4;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: clamp(36px, 5vw, 58px);
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #1684c4;
+}
+
+.hero h2 {
+    font-size: 20px;
+    color: #42627d;
+    margin-bottom: 18px;
+}
+
+.hero-content > p:not(.small-heading) {
+    max-width: 520px;
+    margin-bottom: 25px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 22px;
+    box-shadow: 0 15px 35px rgba(26, 79, 120, 0.18);
+}
+
+.main-btn, .explore-btn {
+    display: inline-block;
+    border: none;
+    background: #1684c4;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.25s;
+}
+
+.main-btn:hover, .explore-btn:hover {
+    background: #0d5f96;
+    transform: translateY(-2px);
+}
+
+.section {
+    padding: 75px 8%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 34px;
+    margin-bottom: 30px;
+    color: #183b61;
+}
+
+.about-card {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    text-align: left;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(20, 60, 100, 0.07);
+}
+
+.about-card h3 {
+    color: #1684c4;
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.about-card p {
+    margin-bottom: 12px;
+}
+
+.skills-section {
+    background: #eaf5ff;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.skill-card {
+    padding: 30px 20px;
+    background: white;
+    border-radius: 17px;
+    box-shadow: 0 8px 25px rgba(20, 60, 100, 0.08);
+    transition: 0.25s;
+}
+
+.skill-card:hover {
+    transform: translateY(-7px);
+}
+
+.skill-card img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.skill-card h3 {
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.skill-card p {
+    min-height: 50px;
+    margin-bottom: 18px;
+    color: #60778b;
+}
+
+.quote-section {
+    background: #f4f9ff;
+}
+
+.quote-card {
+    max-width: 700px;
+    margin: auto;
+    padding: 35px;
+    background: white;
+    border-radius: 17px;
+    box-shadow: 0 8px 25px rgba(20, 60, 100, 0.08);
+}
+
+.quote-mark {
+    font-size: 60px;
+    color: #1684c4;
+    line-height: 1;
+}
+
+#quoteText {
+    font-size: 22px;
+    margin: 15px 0 25px;
+}
+
+.game-section {
+    background: #eaf5ff;
+}
+
+.game-card {
+    max-width: 520px;
+    margin: auto;
+    padding: 30px;
+    background: white;
+    border-radius: 17px;
+    box-shadow: 0 8px 25px rgba(20, 60, 100, 0.08);
+}
+
+.game-card input {
+    width: 100%;
+    margin: 18px 0;
+    padding: 13px;
+    border: 1px solid #b7d6ef;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#gameResult {
+    min-height: 30px;
+    margin: 15px 0;
+    font-weight: bold;
+    color: #1684c4;
+}
+
+.reset-btn {
+    border: none;
+    background: transparent;
+    color: #1684c4;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.contact-section p {
+    margin-bottom: 18px;
+}
+
+.email {
+    margin-top: 18px;
+    color: #42627d;
+}
+
+footer {
+    text-align: center;
+    padding: 22px;
+    background: #183b61;
+    color: white;
+}
+
+.learn-page {
+    min-height: 100vh;
+}
+
+.learn-header {
+    padding: 45px 8%;
+    background: linear-gradient(120deg, #eaf6ff, #f8fbff);
+    text-align: center;
+}
+
+.learn-content {
+    max-width: 850px;
+    margin: auto;
+    padding: 45px 8%;
+}
+
+.learn-content h2 {
+    color: #1684c4;
+    margin: 25px 0 10px;
+}
+
+.learn-content ul {
+    padding-left: 25px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 25px;
+    color: #1684c4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 55px 7%;
+    }
+
+    .hero-image img {
+        height: 260px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 55px 7%;
+    }
+
+    .section-title {
+        font-size: 29px;
+    }
+
+    .settings-panel {
+        right: 7%;
+    }
+}
+0nav-menu.showsettings-panel.showgrid-template-columns: 1fr 1fr
