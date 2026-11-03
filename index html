@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Akshayworld</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap"><nav aria-label="Main">
+  <b>Akshayworld</b>
+  <button class="menu-btn" id="mb" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  <ul id="menu"><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#services">Services</a></li><li><a href="#interests">Interests</a></li><li><a href="#code">Code</a></li><li><a href="#contact">Contact</a></li></ul>
+</nav></div></header>
+
+<main>
+<div class="wrap hero">
+  <div>
+    <h1><strong>I’m Akshay,<br><span style="color:var(--accent)">a web developer</span></strong></h1>
+    <p class="lead">I can create web pages for your personal use and for your workshop or business: clean, fast and great on every phone and screen.</p>
+    <div class="btns"><a class="btn p" href="#contact">Contact me</a><a class="btn s" href="#skills">See my skills</a></div>
+  </div>
+  <div class="editor" aria-hidden="true">
+    <div class="bar"><i></i><i></i><i></i><span>akshay.html</span></div>
+<pre><span class="t">&lt;section</span> <span class="f">class</span>=<span class="s">"developer"</span><span class="t">&gt;</span>
+  <span class="t">&lt;h1&gt;</span>Akshay<span class="t">&lt;/h1&gt;</span>
+  <span class="t">&lt;p&gt;</span>Loves building things<span class="t">&lt;/p&gt;</span>
+<span class="t">&lt;/section&gt;</span>
+
+<span class="c">/* style.css */</span>
+<span class="f">.developer</span> {
+  <span class="k">color</span>: <span class="s">white</span>;
+  <span class="k">background</span>: <span class="s">indigo</span>;
+}
+
+<span class="c">// Main.java</span>
+<span class="k">public class</span> <span class="f">Main</span> {
+  <span class="k">public static void</span> <span class="f">main</span>(String[] a) {
+    System.out.println(<span class="s">"Hello, world!"</span>);<span class="caret"></span>
+  }
+}</pre>
+  </div>
+</div>
+
+<section id="about"><div class="wrap about">
+  <div>
+    <h2>About me</h2>
+    <p>I’m Akshay, a developer who enjoys building websites and software that are simple to use and well made. I care about the details: tidy structure, consistent styling and code that other people can read and maintain.</p>
+    <p>I’m deeply interested in technology and I like learning how things work, from the markup behind a web page to the logic behind a program. I keep exploring new tools and ideas so that my work keeps getting better.</p>
+    <p>My foundation is HTML, CSS and Java. I use them to create responsive layouts, clean interfaces and solid application logic, and I’m always ready to take on new challenges.</p>
+    <div class="logos" aria-label="Technologies I use"><span><svg class="logo" viewBox="0 0 48 50" aria-hidden="true"><path d="M6 4h36l-3.4 38L24 46 9.4 42z" fill="#e44d26"/><path d="M24 8v34.6l12.4-3.5L39 8z" fill="#f16529"/><text x="24" y="33" font-size="22" font-weight="800" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif">5</text></svg>HTML</span><span><svg class="logo" viewBox="0 0 48 50" aria-hidden="true"><path d="M6 4h36l-3.4 38L24 46 9.4 42z" fill="#264de4"/><path d="M24 8v34.6l12.4-3.5L39 8z" fill="#2965f1"/><text x="24" y="33" font-size="22" font-weight="800" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif">3</text></svg>CSS</span><span><svg class="logo" viewBox="0 0 48 50" aria-hidden="true"><path d="M18 6c-4 5 4 7 0 13M26 4c-4 5 4 8 0 15" stroke="#e76f00" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M9 25h26v6a9 9 0 0 1-9 9h-8a9 9 0 0 1-9-9z" fill="#5382a1"/><path d="M35 28h2.5a4.5 4.5 0 0 1 0 9H33" stroke="#5382a1" stroke-width="3" fill="none"/><path d="M7 45h30" stroke="#e76f00" stroke-width="3" stroke-linecap="round"/></svg>Java</span></div>
+  </div>
+  <dl class="facts">
+    <div><dt>Name</dt><dd>Akshay</dd></div>
+    <div><dt>Role</dt><dd>Developer</dd></div>
+    <div><dt>Focus</dt><dd>Web &amp; software</dd></div>
+    <div><dt>Core skills</dt><dd>HTML, CSS, Java</dd></div>
+    <div><dt>Interest</dt><dd>Technology</dd></div>
+    <div><dt>Contact</dt><dd>By email</dd></div>
+  </dl>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>Skills</h2>
+  <p class="sub">The languages I use to build web pages and applications.</p>
+  <div class="skills">
+    <div class="skill"><h3><svg class="logo" viewBox="0 0 48 50" role="img" aria-label="HTML5 logo"><path d="M6 4h36l-3.4 38L24 46 9.4 42z" fill="#e44d26"/><path d="M24 8v34.6l12.4-3.5L39 8z" fill="#f16529"/><text x="24" y="33" font-size="22" font-weight="800" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif">5</text></svg>HTML</h3><p>Semantic, accessible page structure with clean, well-organised markup.</p><div class="meter" role="img" aria-label="HTML proficiency 90 percent"><span style="width:90%"></span></div></div>
+    <div class="skill"><h3><svg class="logo" viewBox="0 0 48 50" role="img" aria-label="CSS3 logo"><path d="M6 4h36l-3.4 38L24 46 9.4 42z" fill="#264de4"/><path d="M24 8v34.6l12.4-3.5L39 8z" fill="#2965f1"/><text x="24" y="33" font-size="22" font-weight="800" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif">3</text></svg>CSS</h3><p>Responsive layouts with Flexbox and Grid, consistent styling and polished design details.</p><div class="meter" role="img" aria-label="CSS proficiency 85 percent"><span style="width:85%"></span></div></div>
+    <div class="skill"><h3><svg class="logo" viewBox="0 0 48 50" role="img" aria-label="Java logo"><path d="M18 6c-4 5 4 7 0 13M26 4c-4 5 4 8 0 15" stroke="#e76f00" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M9 25h26v6a9 9 0 0 1-9 9h-8a9 9 0 0 1-9-9z" fill="#5382a1"/><path d="M35 28h2.5a4.5 4.5 0 0 1 0 9H33" stroke="#5382a1" stroke-width="3" fill="none"/><path d="M7 45h30" stroke="#e76f00" stroke-width="3" stroke-linecap="round"/></svg>Java</h3><p>Object-oriented programming, problem solving and building reliable application logic.</p><div class="meter" role="img" aria-label="Java proficiency 80 percent"><span style="width:80%"></span></div></div>
+  </div>
+</div></section>
+
+<section id="interests"><div class="wrap">
+  <h2>Interests and approach</h2>
+  <p class="sub">What drives my work and how I go about it.</p>
+  <div class="grid3">
+    <div class="box"><h3>Technology</h3><p>I follow new tools, languages and ideas, and I enjoy understanding how modern technology works.</p></div>
+    <div class="box"><h3>Clean code</h3><p>I write code that is organised, commented where needed and easy for others to read and extend.</p></div>
+    <div class="box"><h3>Responsive design</h3><p>Every page I build is made to look and work well on phones, tablets and desktops.</p></div>
+    <div class="box"><h3>Problem solving</h3><p>I break big problems into small steps and enjoy finding simple, effective solutions.</p></div>
+    <div class="box"><h3>Continuous learning</h3><p>I keep practising and building so my skills grow with every project.</p></div>
+    <div class="box"><h3>Teamwork</h3><p>I communicate clearly, take feedback well and like working with others toward a shared goal.</p></div>
+  </div>
+</div></section>
+
+<section id="services"><div class="wrap">
+  <h2>Web pages I can create for you</h2>
+  <p class="sub">Tell me what you need and I’ll design and build it with clean HTML, CSS and a smooth, responsive layout.</p>
+  <div class="grid3">
+    <div class="box"><h3>Personal websites</h3><p>Portfolios, resumes, blogs and personal pages that show who you are and what you do.</p></div>
+    <div class="box"><h3>Workshop websites</h3><p>A professional page for your workshop: services, work samples, opening hours and an easy way to contact you.</p></div>
+    <div class="box"><h3>Business and landing pages</h3><p>Simple, fast pages to introduce a product, an event or a small business online.</p></div>
+  </div>
+</div></section>
+
+<section id="code"><div class="wrap">
+  <h2>Code in action</h2>
+  <p class="sub">A look at the kind of code I write every day.</p>
+  <div class="shots">
+    <svg viewBox="0 0 320 220" role="img" aria-label="HTML code in an editor"><rect width="320" height="220" fill="#25206b"/><rect width="320" height="26" fill="#312c85"/><circle cx="14" cy="13" r="4" fill="#ff6b6b"/><circle cx="28" cy="13" r="4" fill="#ffd166"/><circle cx="42" cy="13" r="4" fill="#6bdc8b"/><g font-family="monospace" font-size="12"><text x="16" y="52" fill="#8fd3ff">&lt;!DOCTYPE html&gt;</text><text x="16" y="72" fill="#8fd3ff">&lt;html lang=<tspan fill="#9be7a8">"en"</tspan>&gt;</text><text x="30" y="92" fill="#8fd3ff">&lt;head&gt;</text><text x="44" y="112" fill="#8fd3ff">&lt;title&gt;<tspan fill="#fff">Akshay</tspan>&lt;/title&gt;</text><text x="30" y="132" fill="#8fd3ff">&lt;/head&gt;</text><text x="30" y="152" fill="#8fd3ff">&lt;body&gt;</text><text x="44" y="172" fill="#8fd3ff">&lt;h1&gt;<tspan fill="#ff
+    48465478919085800 320 220
+    https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap
