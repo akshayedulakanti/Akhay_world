@@ -1,0 +1,263 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshay | Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="#home" class="logo">Akshay<span>.</span></a>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Open navigation menu">
+            ☰ Menu
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="small-heading">WELCOME TO MY PORTFOLIO</p>
+            <h1>Hello, I'm <span>Akshay</span></h1>
+            <h2>Technology Enthusiast | Beginner Web Developer</h2>
+
+            <p>
+                I enjoy learning technology, creating websites and exploring
+                new ideas. This is my personal space to share my interests
+                and learning journey.
+            </p>
+
+            <a href="#about" class="main-btn">Discover More</a>
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1100"
+                alt="Laptop and coding workspace">
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+        <p class="small-heading">GET TO KNOW ME</p>
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-card">
+            <h3>Akshay Edulakanti</h3>
+
+            <p>
+                I'm interested in computers, programming and website
+                development. I enjoy understanding how websites work
+                and improving my skills by creating projects.
+            </p>
+
+            <p>
+                <strong>Interests:</strong>
+                Technology, coding, creativity and learning new things.
+            </p>
+
+            <p>
+                <strong>My Goal:</strong>
+                To keep learning, build useful projects and explore
+                the world of technology.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section skills-section" id="skills">
+        <p class="small-heading">WHAT I'M LEARNING</p>
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="skills-grid">
+
+            <!-- HTML -->
+            <article class="skill-card">
+                <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                    alt="HTML logo">
+
+                <h3>HTML</h3>
+                <p>Building the structure of websites.</p>
+
+                <button class="explore-btn" data-target="htmlInfo"
+                    aria-expanded="false">
+                    Explore More +
+                </button>
+
+                <div class="skill-info" id="htmlInfo" hidden>
+                    <h4>What is HTML?</h4>
+                    <p>
+                        HTML stands for HyperText Markup Language.
+                        It creates the structure of a webpage using
+                        elements such as headings, paragraphs, images,
+                        links, lists and forms.
+                    </p>
+                    <p>
+                        <strong>Example:</strong> HTML creates the
+                        content and structure you see on a website.
+                    </p>
+                </div>
+            </article>
+
+            <!-- CSS -->
+            <article class="skill-card">
+                <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                    alt="CSS logo">
+
+                <h3>CSS</h3>
+                <p>Designing attractive and responsive websites.</p>
+
+                <button class="explore-btn" data-target="cssInfo"
+                    aria-expanded="false">
+                    Explore More +
+                </button>
+
+                <div class="skill-info" id="cssInfo" hidden>
+                    <h4>What is CSS?</h4>
+                    <p>
+                        CSS stands for Cascading Style Sheets.
+                        It controls how HTML elements look, including
+                        colours, fonts, spacing, backgrounds and layouts.
+                    </p>
+                    <p>
+                        <strong>Example:</strong> CSS makes a webpage
+                        colourful, organized and responsive on different
+                        screen sizes.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Java -->
+            <article class="skill-card">
+                <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                    alt="Java logo">
+
+                <h3>Java</h3>
+                <p>Learning programming and logical thinking.</p>
+
+                <button class="explore-btn" data-target="javaInfo"
+                    aria-expanded="false">
+                    Explore More +
+                </button>
+
+                <div class="skill-info" id="javaInfo" hidden>
+                    <h4>What is Java?</h4>
+                    <p>
+                        Java is a general-purpose, object-oriented
+                        programming language used to build software
+                        and applications.
+                    </p>
+                    <p>
+                        <strong>Example:</strong> Java helps programmers
+                        write instructions, solve problems and develop
+                        different types of applications.
+                    </p>
+                    <p>
+                        Remember: Java and JavaScript are different
+                        programming languages.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Quotations -->
+    <section class="section quote-section" id="quotes">
+        <p class="small-heading">A LITTLE INSPIRATION</p>
+        <h2 class="section-title">Daily Motivation</h2>
+
+        <div class="quote-card">
+            <span class="quote-mark">“</span>
+            <p id="quoteText">
+                Every expert was once a beginner.
+            </p>
+
+            <button class="main-btn" id="quoteBtn">
+                See Another Quote
+            </button>
+        </div>
+    </section>
+
+    <!-- Contact / Inquiry -->
+    <section class="section contact-section" id="contact">
+        <p class="small-heading">LET'S CONNECT</p>
+        <h2 class="section-title">Contact Me</h2>
+
+        <p class="contact-intro">
+            Have a question, project idea or inquiry?
+            Fill in the form below to get in touch.
+        </p>
+
+        <form id="inquiryForm" class="inquiry-form">
+
+            <label for="visitorName">Your Name</label>
+            <input
+                type="text"
+                id="visitorName"
+                name="name"
+                placeholder="Enter your full name"
+                required>
+
+            <label for="visitorPhone">Phone Number</label>
+            <input
+                type="tel"
+                id="visitorPhone"
+                name="phone"
+                placeholder="Enter your phone number"
+                required>
+
+            <label for="visitorEmail">Email Address</label>
+            <input
+                type="email"
+                id="visitorEmail"
+                name="email"
+                placeholder="Enter your email address"
+                required>
+
+            <label for="visitorMessage">Your Inquiry</label>
+            <textarea
+                id="visitorMessage"
+                name="message"
+                rows="5"
+                placeholder="Write your message here..."
+                required></textarea>
+
+            <button type="submit" class="main-btn">
+                Submit Inquiry
+            </button>
+
+            <p id="formMessage" aria-live="polite"></p>
+        </form>
+
+        <p class="email">
+            Or email me directly:
+            <a href="mailto:akshayedulakanti7013@gmail.com">
+                akshayedulakanti7013@gmail.com
+            </a>
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 Akshay Edulakanti. Made with curiosity and creativity.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+                           </html>
+                           https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1100https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svghttps://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svghttps://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svgakshayedulakanti7013@gmail.com2026
