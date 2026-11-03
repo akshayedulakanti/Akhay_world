@@ -195,63 +195,64 @@
     </section>
 
     <!-- Contact / Inquiry -->
-    <section class="section contact-section" id="contact">
-        <p class="small-heading">LET'S CONNECT</p>
-        <h2 class="section-title">Contact Me</h2>
+    
+<section class="section contact-section" id="contact">
+    <p class="small-heading">LET'S CONNECT</p>
+    <h2 class="section-title">Contact Me</h2>
 
-        <p class="contact-intro">
-            Have a question, project idea or inquiry?
-            Fill in the form below to get in touch.
+    <p class="contact-intro">
+        Have a question, project idea or inquiry?
+        You can contact me directly or submit the inquiry form.
+    </p>
+
+    <!-- Direct email contact -->
+    <div class="direct-contact">
+        <h3>Contact Me Directly</h3>
+        <p>Send me an email using the address below.</p>
+
+        <a class="email-contact-btn"
+           href="mailto:akshayedulakanti7013@gmail.com?subject=Portfolio%20Enquiry">
+            <span>✉</span> Contact Through Gmail
+        </a>
+
+        <p class="email-address">
+            akshayedulakanti7013@gmail.com
         </p>
+    </div>
 
-        <form id="inquiryForm" class="inquiry-form">
+    <div class="form-divider">
+        <span>OR SUBMIT AN INQUIRY</span>
+    </div>
 
-            <label for="visitorName">Your Name</label>
-            <input
-                type="text"
-                id="visitorName"
-                name="name"
-                placeholder="Enter your full name"
-                required>
+    <!-- Inquiry form -->
+    <form id="inquiryForm" class="inquiry-form">
 
-            <label for="visitorPhone">Phone Number</label>
-            <input
-                type="tel"
-                id="visitorPhone"
-                name="phone"
-                placeholder="Enter your phone number"
-                required>
+        <label for="visitorName">Your Name</label>
+        <input type="text" id="visitorName"
+               placeholder="Enter your full name" required>
 
-            <label for="visitorEmail">Email Address</label>
-            <input
-                type="email"
-                id="visitorEmail"
-                name="email"
-                placeholder="Enter your email address"
-                required>
+        <label for="visitorPhone">Phone Number</label>
+        <input type="tel" id="visitorPhone"
+               placeholder="Enter your phone number"
+               pattern="[0-9+() -]{7,20}" required>
 
-            <label for="visitorMessage">Your Inquiry</label>
-            <textarea
-                id="visitorMessage"
-                name="message"
-                rows="5"
-                placeholder="Write your message here..."
-                required></textarea>
+        <label for="visitorEmail">Email Address</label>
+        <input type="email" id="visitorEmail"
+               placeholder="Enter your email address" required>
 
-            <button type="submit" class="main-btn">
-                Submit Inquiry
-            </button>
+        <label for="visitorMessage">Your Inquiry</label>
+        <textarea id="visitorMessage" rows="5"
+                  placeholder="Write your message here..."
+                  required></textarea>
 
-            <p id="formMessage" aria-live="polite"></p>
-        </form>
+        <button type="submit" class="main-btn">
+            Submit Inquiry
+        </button>
 
-        <p class="email">
-            Or email me directly:
-            <a href="mailto:akshayedulakanti7013@gmail.com">
-                akshayedulakanti7013@gmail.com
-            </a>
-        </p>
-    </section>
+        <p id="formMessage" aria-live="polite"></p>
+    </form>
+</section>
+    
 
     <footer>
         <p>© 2026 Akshay Edulakanti. Made with curiosity and creativity.</p>
